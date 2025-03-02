@@ -26,4 +26,4 @@ class PrimeListTest(unittest.TestCase):
     def test_large_numbers_is_prime(self):
         prime_list = [879879874125, 123123454535322, 213358039485309485343]
         is_prime = is_prime_list(prime_list)
-        self.assertTrue(is_prime)
+        self.assertFalse(is_prime)
