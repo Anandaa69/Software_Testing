@@ -13,3 +13,7 @@ class FizzBuzzNumberTest(unittest.TestCase):
         result = fizzbuzz(num)
         self.assertEqual(result, "Buzz")
 
+    def test_give_15(self):
+        num = 15
+        result = fizzbuzz(num)
+        self.assertEqual(result, "FizzBuzz")
