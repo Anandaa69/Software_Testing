@@ -27,3 +27,24 @@ class PrimeListTest(unittest.TestCase):
         prime_list = [879879874125, 123123454535322, 213358039485309485343]
         is_prime = is_prime_list(prime_list)
         self.assertFalse(is_prime)
+
+    def test_prime_number_at_end(self):
+        prime_list = [4, 6, 8, 11]
+        is_prime = is_prime_list(prime_list)
+        self.assertFalse(is_prime)
+
+    def test_all_primes(self):
+        prime_list = [2, 3, 5, 7, 11]
+        is_prime = is_prime_list(prime_list)
+        self.assertTrue(is_prime)
+
+    def test_large_prime(self):
+        prime_list = [104729]
+        is_prime = is_prime_list(prime_list)
+        self.assertTrue(is_prime)
+
+    def test_large_non_prime_with_small_prime_factors(self):
+        prime_list = [100000000000000000]
+        is_prime = is_prime_list(prime_list)
+        self.assertFalse(is_prime)
+
