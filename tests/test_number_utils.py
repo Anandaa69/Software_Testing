@@ -1,4 +1,4 @@
-from main_code.number_utils import is_prime_list
+from main_code.number import is_prime_list
 import unittest
 
 class PrimeListTest(unittest.TestCase):
