@@ -27,3 +27,33 @@ class FizzBuzzNumberTest(unittest.TestCase):
         num = -3
         result = fizzbuzz(num)
         self.assertEqual(result, "Fizz")
+
+    def test_give_10(self):
+        num = 10
+        result = fizzbuzz(num)
+        self.assertEqual(result, "Buzz")
+
+    def test_give_30(self):
+        num = 30
+        result = fizzbuzz(num)
+        self.assertEqual(result, "FizzBuzz")
+
+    def test_give_100(self):
+        num = 100
+        result = fizzbuzz(num)
+        self.assertEqual(result, "Buzz")
+
+    def test_give_101(self):
+        num = 101
+        result = fizzbuzz(num)
+        self.assertEqual(result, "...")
+
+    def test_give_large_number(self):
+        num = 99999999
+        result = fizzbuzz(num)
+        self.assertEqual(result, "Fizz")
+
+    def test_give_large_buzz(self):
+        num = 100000
+        result = fizzbuzz(num)
+        self.assertEqual(result, "Buzz")
