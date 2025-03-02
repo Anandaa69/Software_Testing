@@ -22,3 +22,8 @@ class FizzBuzzNumberTest(unittest.TestCase):
         num = 4
         result = fizzbuzz(num)
         self.assertEqual(result, "...")
+
+    def test_give_neg_3(self):
+        num = -3
+        result = fizzbuzz(num)
+        self.assertEqual(result, "Fizz")
